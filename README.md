@@ -22,3 +22,10 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## Instructions
+
+* run `bundle`
+* run `yarn install`
+* run `rails g rename:into New-Name` where New-Name is the name of the application
+* add and configure database.yml
