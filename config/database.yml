@@ -6,8 +6,8 @@ default: &default
   encoding: unicode
   # host: <%= ENV['PG_HOST'] %>
   pool: 5
-  username: postgres
-  password: 
+  username: <%= ENV['DATABASE_USERNAME'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
 
 development:
   <<: *default
