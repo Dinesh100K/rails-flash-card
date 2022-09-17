@@ -9,7 +9,7 @@ function Context(props: any) {
   useEffect(() => {
     // console.log("axios:", `${process.env.REACT_APP_BASE_URL}/api/getuser`)
     axios
-      .get(`${process.env.REACT_APP_BASE_URL}/api/getuser`, {
+      .get(`/api/getuser`, {
         withCredentials: true,
       })
       .then((res: AxiosResponse) => {

@@ -9,7 +9,7 @@ import FlashCard from '../components/FlashCard'
 import { myContext } from '../Context'
 import FlashTypes from '../types/FlashType'
 
-// const backdrop = require('../../../../assets/images/backdrop.jpg')
+const backdrop = require('../../../../assets/images/backdrop.jpg')
 
 const ProfilePage = () => {
   const context: any = useContext(myContext)
@@ -116,7 +116,7 @@ const ProfilePage = () => {
 
   return (
     <>
-      {/* <img className="fixed z-[-1] mt-10 h-screen w-screen border-2" src={backdrop} alt="test" /> */}
+      <img className="fixed z-[-1] mt-10 h-screen w-screen border-2" src={backdrop} alt="test" />
       <div className="fixed left-[42%] z-[3] mt-2 flex items-start justify-center">
         <DropDown
           tailwind="border-4 border-transparent shadow-lg py-2 px-8 rounded-md

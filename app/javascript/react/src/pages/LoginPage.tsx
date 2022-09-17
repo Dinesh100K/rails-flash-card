@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '../components/common/Button'
 import { Card } from '../components/common/Card'
-// const backdrop = require('../../../../assets/images/backdrop.jpg')
+const backdrop = require('../../../../assets/images/backdrop.jpg')
 
 const LoginPage = (props: any) => {
   console.log('Environment : ', process.env.REACT_APP_BASE_URL)
@@ -11,7 +11,7 @@ const LoginPage = (props: any) => {
 
   return (
     <>
-      {/* <img className="fixed z-[-1] mt-10 h-screen w-screen border-2" src={backdrop} alt="test" /> */}
+      <img className="fixed z-[-1] mt-10 h-screen w-screen border-2" src={backdrop} alt="test" />
 
       <div
         className={`item-center flex h-screen justify-center overflow-hidden
