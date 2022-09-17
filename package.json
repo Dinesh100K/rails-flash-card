@@ -15,8 +15,8 @@
   },
   "scripts": {
     "prettier-format": "prettier --config .prettierrc 'app/javascript/react/src/**/*.tsx' --write",
-    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets",
-    "check-types": "tsc --project tsconfig.json --noEmit --watch --preserveWatchOutput"
+    "check-types": "tsc --project tsconfig.json --noEmit --watch --preserveWatchOutput",
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets --loader:.jpg=file"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
