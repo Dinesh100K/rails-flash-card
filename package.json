@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name":"rails_flash_card",
   "private": "true",
   "dependencies": {
     "@hotwired/stimulus": "^3.1.0",
