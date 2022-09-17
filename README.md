@@ -29,3 +29,5 @@ Things you may want to cover:
 * run `yarn install`
 * run `rails g rename:into New-Name` where New-Name is the name of the application
 * add and configure database.yml
+* run `rails db:create`
+* run `./bin/dev` to run application
