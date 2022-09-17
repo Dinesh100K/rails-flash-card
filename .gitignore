@@ -41,3 +41,6 @@
 
 #Ignore databaseconfig file
 /config/database.yml
+
+/.env.development
+/.env.production
