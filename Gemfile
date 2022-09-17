@@ -75,7 +75,9 @@ end
 
 # Use Tailwind CSS, Bootstrap, Bulma, PostCSS, or Dart Sass to bundle and process your CSS
 gem 'cssbundling-rails'
+gem 'devise'
 gem 'pg', '~> 1.4'
 gem 'rename', '~> 1.0'
 gem 'rubocop-rails', require: false
 gem 'tailwindcss-rails', '~> 2.0'
+
