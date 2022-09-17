@@ -15,7 +15,6 @@
   },
   "scripts": {
     "prettier-format": "prettier --config .prettierrc 'app/javascript/react/src/**/*.tsx' --write",
-    "build2": "node config/esbuild.config.js",
     "check-types": "tsc --project tsconfig.json --noEmit --watch --preserveWatchOutput",
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets --loader:.jpg=file"
   },
