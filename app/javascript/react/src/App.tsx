@@ -1,5 +1,5 @@
 import React from "react";
-import Welcome from "./src/components/Welcome";
+import Welcome from "./components/Welcome";
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 const App = () => {

@@ -2,4 +2,4 @@
 // import "@hotwired/turbo-rails"
 // import "./controllers"
 
-import './react/index'
+import './react/src/index'
