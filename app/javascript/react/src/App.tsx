@@ -1,14 +1,18 @@
 import React from "react";
 import Welcome from "./components/Welcome";
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Navbar from "./pages/Navbar";
+import Homepage from "./pages/Homepage";
 
 const App = () => {
   return (
     <>
-      <h1>This is App</h1>
-      <div>
-        <Welcome />
-      </div>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 };
