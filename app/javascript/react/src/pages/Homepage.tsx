@@ -3,14 +3,14 @@ import Button from '../components/common/Button'
 import { Card } from '../components/common/Card'
 import FlashCard from '../components/FlashCard'
 
-// const backdrop = require('../../../../assets/images/backdrop.jpg')
+const backdrop = require('../../../../assets/images/backdrop.jpg')
 
 const Homepage = () => {
   const navigate = useNavigate()
   const handleLogin = () => navigate('/login')
   return (
     <>
-      {/* <img className="z-[-1] fixed w-screen h-screen border-2 mt-10" src={backdrop} alt="test"/> */}
+      <img className="z-[-1] fixed w-screen h-screen border-2 mt-10" src={backdrop} alt="pencils"/>
       <div
         className={`item-center flex h-screen justify-center overflow-hidden
         py-5 transition-all duration-500 ease-in-out`}>
