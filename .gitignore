@@ -38,10 +38,6 @@
 !/app/assets/builds/.keep
 
 /node_modules
-
-#Ignore databaseconfig file
-/config/database.yml
-
 /.env.development
 /.env.production
 .idea
