@@ -21,6 +21,7 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "./app/javascript/react"
+    "./app/javascript/react",
+    "./app/assets/images"
   ]
 }
