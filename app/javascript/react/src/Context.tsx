@@ -10,7 +10,7 @@ function Context(props: any) {
     // console.log("axios:", `${process.env.REACT_APP_BASE_URL}/api/getuser`)
     axios
       .get(`${process.env.REACT_APP_BASE_URL}/api/getuser`, {
-        withCredentials: true
+        withCredentials: true,
       })
       .then((res: AxiosResponse) => {
         // console.log('data received : ', res.data)

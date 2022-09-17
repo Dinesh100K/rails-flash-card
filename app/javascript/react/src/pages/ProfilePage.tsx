@@ -59,8 +59,7 @@ const ProfilePage = () => {
 
   const [selectedItem, setSelectedItem] = useState('all')
   useEffect(() => {
-    if (selectedItem === "all"){
-
+    if (selectedItem === 'all') {
       axios
         .get(`${process.env.REACT_APP_BASE_URL}/api/user/${context.id}/flashes`, {
           timeout: 5000,
@@ -72,8 +71,7 @@ const ProfilePage = () => {
         })
         .catch(err => console.error(err))
     }
-    
-  },[context.id,selectedItem])
+  }, [context.id, selectedItem])
 
   // const ref = useRef(null)
   const handleContextMenu = (event: any) => {
@@ -102,7 +100,6 @@ const ProfilePage = () => {
     console.log('edit clicked', id, selectedFlash)
     navigate(`/edit`, { state: selectedFlash })
   }
-
 
   const handleFilter = () => {
     console.log('filtering', selectedItem)
