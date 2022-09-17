@@ -44,3 +44,4 @@
 
 /.env.development
 /.env.production
+.idea
