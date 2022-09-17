@@ -7,7 +7,7 @@ default: &default
   # host: <%= ENV['PG_HOST'] %>
   pool: 5
   username: <%= ENV['DATABASE_USERNAME'] %>
-  password: 
+  password: <%= ENV['DATABASE_PASSWORD'] %>
 
 development:
   <<: *default
