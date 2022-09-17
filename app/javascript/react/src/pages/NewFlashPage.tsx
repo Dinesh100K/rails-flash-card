@@ -6,7 +6,6 @@ import { myContext } from '../Context'
 
 // const backdrop = require('../../../../assets/images/backdrop.jpg')
 
-
 const NewFlashPage = () => {
   const navigate = useNavigate()
 
@@ -73,13 +72,18 @@ const NewFlashPage = () => {
 
   return (
     <>
-          {/* <img className="z-[-1] fixed w-screen h-screen border-2 mt-10" src={backdrop} alt="test"/> */}
+      {/* <img className="z-[-1] fixed w-screen h-screen border-2 mt-10" src={backdrop} alt="test"/> */}
 
       <div
         className="item-center mx-auto flex h-screen justify-center
         transition-all duration-500 ease-in-out ">
-        <div className='mt-[5%]'>
-          <NewFlashCard onHandleSubmit={handleSubmit} error={error} flashColor="bg-white" isLoading={isLoading} />
+        <div className="mt-[5%]">
+          <NewFlashCard
+            onHandleSubmit={handleSubmit}
+            error={error}
+            flashColor="bg-white"
+            isLoading={isLoading}
+          />
         </div>
       </div>
     </>

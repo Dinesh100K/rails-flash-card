@@ -8,7 +8,7 @@ import ColorSelectionButton from './common/ColorSelectionButton'
 
 const NewFlashCard = (props: any) => {
   const [color, setColor] = useState({
-    backgroundColor: "",
+    backgroundColor: '',
     color: '#ffffff',
   })
   const handleffffff = (event: any) => {
@@ -62,7 +62,9 @@ const NewFlashCard = (props: any) => {
   return (
     <Card color={color.backgroundColor || props.flashColor}>
       <form className="space-y-6" onSubmit={props.onHandleSubmit} id="flash-form">
-        <h3 className="text-xl font-bold text-black/[0.7]">{props.title || 'Create a new flash'}</h3>
+        <h3 className="text-xl font-bold text-black/[0.7]">
+          {props.title || 'Create a new flash'}
+        </h3>
         <div>
           <div className="flex items-start justify-between">
             <Label>Your Question</Label>
@@ -95,7 +97,7 @@ const NewFlashCard = (props: any) => {
           <Label>Background color</Label>
         </div>
         <div className="flex items-start justify-evenly px-20">
-          <ColorSelectionButton color={'#ffffff'} onClick={handleffffff}/>
+          <ColorSelectionButton color={'#ffffff'} onClick={handleffffff} />
           <ColorSelectionButton color={'#fff1cc'} onClick={handlefff1cc} />
           <ColorSelectionButton color={'#dbffcc'} onClick={handledbffcc} />
           <ColorSelectionButton color={'#ffcccc'} onClick={handleffcccc} />

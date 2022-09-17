@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react'
 
 function ColorSelectionButton(props: any) {
- 
   const [color, setColor] = useState('#ffffff')
 
   useEffect(() => {
@@ -21,18 +20,17 @@ function ColorSelectionButton(props: any) {
       rounded-xl overflow-hidden`)
   }, [props.color])
 
-
   return (
     <>
       <button
-        className={`rounded-full ${color} border-4 border-black/[0.2] px-4 py-4
-        focus:ring-4 focus:ring-black/[0.2] mx-4`}
+        className={`rounded-full ${color} mx-4 border-4 border-black/[0.2] px-4
+        py-4 focus:ring-4 focus:ring-black/[0.2]`}
         onClick={props.onClick}
         disabled={props.disabled}
         autoFocus={props.autoFocus}
-        />
+      />
     </>
-  );
+  )
 }
 
-export default ColorSelectionButton;
+export default ColorSelectionButton

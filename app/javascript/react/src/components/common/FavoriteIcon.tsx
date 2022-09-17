@@ -1,17 +1,15 @@
 import React from 'react'
 
-const FavoriteIcon = (props :any) => {
+const FavoriteIcon = (props: any) => {
   return (
     <div onClick={props.onClick}>
       <svg
-        className="mr-4 inline-block h-6 w-6 text-white cursor-pointer"
+        className="mr-4 inline-block h-6 w-6 cursor-pointer text-white"
         viewBox="0 0 455 550"
-        fill={props.favorite ? "red" : "none" }
-        stroke={props.favorite ? "none" : "black" }
+        fill={props.favorite ? 'red' : 'none'}
+        stroke={props.favorite ? 'none' : 'black'}
         strokeWidth="50"
-        strokeOpacity="0.3"
-        >
-        
+        strokeOpacity="0.3">
         <path
           d="M326.632,10.346c-38.733,0-74.991,17.537-99.132,46.92c-24.141-29.383-60.399-46.92-99.132-46.92
           C57.586,10.346,0,67.931,0,138.714c0,55.426,33.049,119.535,98.23,190.546c50.162,54.649,104.729,96.96,120.257,108.626l9.01,6.769

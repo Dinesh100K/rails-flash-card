@@ -12,5 +12,5 @@
   "arrowParens": "avoid",
   "proseWrap": "always",
   "endOfLine": "lf",
-  "tailwindConfig": "./tailwind.config.js"
+  "tailwindConfig": "config/tailwind.config.js"
 }

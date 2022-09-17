@@ -6,10 +6,10 @@ export const TextField = (props: any) => {
       type={props.type}
       name={props.name}
       id={props.id}
-      className="block w-full
-        rounded-lg border-4 border-black/[0.2] bg-white/[0.5]
-          p-2.5 text-black/[0.8] focus:border-blue-500
-          focus:ring-blue-500 sm:text-md font-[500] hover:border-black/[0.5]"
+      className="sm:text-md block
+        w-full rounded-lg border-4 border-black/[0.2]
+          bg-white/[0.5] p-2.5 font-[500]
+          text-black/[0.8] hover:border-black/[0.5] focus:border-blue-500 focus:ring-blue-500"
       placeholder={props.children}
     />
   )

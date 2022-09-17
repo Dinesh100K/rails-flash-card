@@ -33,7 +33,6 @@ const EditFlashPage = () => {
     // console.log(actualData)
     if (actualData.question && actualData.answer && context) {
       // console.log(actualData)
-    
 
       try {
         setIsLoading(true)
@@ -50,7 +49,7 @@ const EditFlashPage = () => {
             })
           })
           .catch(err => console.log('err===', err))
-          .finally(() => console.log('done===', setIsLoading(false)));
+          .finally(() => console.log('done===', setIsLoading(false)))
 
         console.log('type===', error)
       } catch (error) {

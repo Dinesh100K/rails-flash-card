@@ -9,7 +9,7 @@ const PrivacyPolicyPage = () => {
         py-5 transition-all duration-500 ease-in-out`}>
         <div>
           <h3 className=" text-2xl font-bold text-black/[0.7]"> Privacy policy !</h3>
-          <div className="my-[3rem] py-3 px-4 mx-4 bg-white">
+          <div className="my-[3rem] mx-4 bg-white py-3 px-4">
             <h2>
               <b>PRIVACY POLICY</b>
             </h2>
