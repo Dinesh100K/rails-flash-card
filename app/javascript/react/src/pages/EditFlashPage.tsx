@@ -4,7 +4,7 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import NewFlashCard from '../components/NewFlashCard'
 import { myContext } from '../Context'
 
-// const backdrop = require('../../../../assets/images/backdrop.jpg')
+const backdrop = require('../../../../assets/images/backdrop.jpg')
 
 const EditFlashPage = () => {
   const { state }: any = useLocation()
@@ -101,7 +101,7 @@ const EditFlashPage = () => {
 
   return (
     <>
-      {/* <img className="fixed z-[-1] mt-10 h-screen w-screen border-2" src={backdrop} alt="test" /> */}
+      <img className="fixed z-[-1] mt-10 h-screen w-screen border-2" src={backdrop} alt="test" />
 
       <div
         className="item-center mx-auto flex h-screen justify-center
