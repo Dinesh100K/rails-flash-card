@@ -85,7 +85,7 @@ const ProfilePage = () => {
 
   const deleteFlash = () => {
     axios
-      .delete(`${process.env.REACT_APP_BASE_URL}/api/flash/${id}/delete`)
+      .delete(`/api/flash/${id}/delete`)
       .then(res => console.log(res.data))
       .catch(err => console.error(err))
   }

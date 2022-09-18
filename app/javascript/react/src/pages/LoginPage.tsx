@@ -6,7 +6,7 @@ const backdrop = require('../../../../assets/images/backdrop.jpg')
 const LoginPage = (props: any) => {
   // console.log('Environment : ', process.env.REACT_APP_BASE_URL)
   const googleLogin = () => {
-    window.open(`${process.env.REACT_APP_BASE_URL}/auth/google`, '_self')
+    window.open(`/auth/google`, '_self')
   }
 
   return (

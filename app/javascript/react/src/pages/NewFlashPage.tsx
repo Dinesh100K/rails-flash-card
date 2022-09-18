@@ -34,7 +34,7 @@ const NewFlashPage = () => {
       setIsLoading(true)
       try {
         axios
-          .post(`${process.env.REACT_APP_BASE_URL}/api/user/${context.id}/newflash`, actualData, {
+          .post(`/api/user/${context.id}/newflash`, actualData, {
             withCredentials: true,
           })
           .then(res => {

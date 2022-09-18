@@ -16,7 +16,7 @@
   "scripts": {
     "prettier-format": "prettier --config .prettierrc 'app/javascript/react/src/**/*.tsx' --write",
     "check-types": "tsc --project tsconfig.json --noEmit --watch --preserveWatchOutput",
-    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets --loader:.jpg=file"
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets --loader:.jpg=dataurl"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
