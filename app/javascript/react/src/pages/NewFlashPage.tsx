@@ -72,7 +72,7 @@ const NewFlashPage = () => {
 
   return (
     <>
-      <img className="z-[-1] fixed w-screen h-screen border-2 mt-10" src={backdrop} alt="test"/>
+      <img className="fixed z-[-1] mt-10 h-screen w-screen border-2" src={backdrop} alt="test" />
 
       <div
         className="item-center mx-auto flex h-screen justify-center
