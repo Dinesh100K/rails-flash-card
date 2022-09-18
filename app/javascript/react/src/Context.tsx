@@ -13,7 +13,7 @@ function Context(props: any) {
         withCredentials: true,
       })
       .then((res: AxiosResponse) => {
-        // console.log('data received : ', res.data)
+        console.log('data received : ', res.data)
         if (res.data) {
           setUserObject(res.data)
         }

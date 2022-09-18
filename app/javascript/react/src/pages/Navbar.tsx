@@ -6,6 +6,7 @@ import { myContext } from '../Context'
 
 const Navbar = () => {
   const context: any = useContext(myContext)
+  console.log(context)
   const navigate = useNavigate()
 
   let links = [
@@ -22,7 +23,7 @@ const Navbar = () => {
       url: '/privacy',
     },
   ]
-  if (context) {
+  if (context.firstName) {
     links = [
       {
         title: `${context.firstName}`,
@@ -37,7 +38,7 @@ const Navbar = () => {
 
   const handleLogout = () => {
     axios
-      .get(`${process.env.REACT_APP_BASE_URL}/auth/logout`, { withCredentials: true })
+      .get(`/auth/logout`, { withCredentials: true })
       .then((res: AxiosResponse) => {
         if (res.data) {
           if (res.data === 'success') {
