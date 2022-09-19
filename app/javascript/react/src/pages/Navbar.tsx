@@ -60,7 +60,7 @@ const Navbar = () => {
             className="absolute left-0 z-[-1] w-full pb-7
               pl-9 transition-all duration-500 ease-in-out md:static md:z-auto md:flex
               md:w-auto md:items-center md:pb-0 md:pl-0">
-            {context ? (
+            {context.firstName ? (
               <>
                 <img
                   src={context.photo}
