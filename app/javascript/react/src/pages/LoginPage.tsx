@@ -23,8 +23,8 @@ const LoginPage = (props: any) => {
             <h3 className=" text-2xl font-bold text-black/[0.7]"> Login to Flash cards</h3>
             <div className="mt-[3rem] ">
               <p>Login with your email</p>
-              <TextField>Email</TextField>
-              <TextField>Password</TextField>
+              <TextField type="email">Email</TextField>
+              <TextField type="password">Password</TextField>
               <div className='my-2'>
                 <div className="flex items-start justify-between">
                   <p
