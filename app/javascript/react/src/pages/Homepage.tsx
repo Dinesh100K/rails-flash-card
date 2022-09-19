@@ -10,8 +10,8 @@ const Homepage = () => {
   const handleLogin = () => navigate('/login')
   return (
     <>
-      <img className="fixed z-[-1] mt-10 h-screen w-screen border-2" src={backdrop} alt="pencils" />
       <div
+        style={{ backgroundImage: `url(${backdrop})`, backgroundRepeat: 'repeat-x' }}
         className={`item-center flex h-screen justify-center overflow-hidden
         py-5 transition-all duration-500 ease-in-out`}>
         <div>

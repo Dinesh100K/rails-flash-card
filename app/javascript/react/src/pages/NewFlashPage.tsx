@@ -72,9 +72,8 @@ const NewFlashPage = () => {
 
   return (
     <>
-      <img className="fixed z-[-1] mt-10 h-screen w-screen border-2" src={backdrop} alt="test" />
-
       <div
+        style={{ backgroundImage: `url(${backdrop})`, backgroundRepeat: 'repeat-x' }}
         className="item-center mx-auto flex h-screen justify-center
         transition-all duration-500 ease-in-out ">
         <div className="mt-[5%]">

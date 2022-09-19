@@ -3,13 +3,13 @@ const backdrop = require('../../../../assets/images/backdrop.jpg')
 const PrivacyPolicyPage = () => {
   return (
     <>
-      <img className="fixed z-[-1] mt-10 h-screen w-screen border-2" src={backdrop} alt="test" />
       <div
-        className={`item-center flex h-screen justify-center
-        py-5 transition-all duration-500 ease-in-out`}>
+        style={{ backgroundImage: `url(${backdrop})`, backgroundRepeat: 'repeat-x' }}
+        className={`item-center my-2 flex h-screen justify-center
+        rounded-md py-5 px-10 transition-all duration-500 ease-in-out`}>
         <div>
-          <h3 className=" text-2xl font-bold text-black/[0.7]"> Privacy policy !</h3>
-          <div className="my-[3rem] mx-4 bg-white py-3 px-4">
+          <h3 className="text-2xl font-bold text-black/[0.7]"> Privacy policy !</h3>
+          <div className="my-[3rem] mx-4 rounded-2xl bg-white py-3 px-4">
             <h2>
               <b>PRIVACY POLICY</b>
             </h2>
@@ -243,7 +243,7 @@ const PrivacyPolicyPage = () => {
             <p>
               Personal Project will take all the steps reasonably necessary to ensure that your data
               is treated securely and in accordance with this Privacy Policy and no transfer of your
-              Personal Data will take place to an organisation or a country unless there are
+              Personal Data will take place to an organization or a country unless there are
               adequate controls in place including the security of your data and other personal
               information.
             </p>
@@ -452,7 +452,7 @@ const PrivacyPolicyPage = () => {
             <p>
               We may employ third party companies and individuals to facilitate our Service (
               <b>“Service Providers”</b>), provide Service on our behalf, perform Service-related
-              services or assist us in analysing how our Service is used.
+              services or assist us in analyzing how our Service is used.
             </p>
             <p>
               These third parties have access to your Personal Data only to perform these tasks on
