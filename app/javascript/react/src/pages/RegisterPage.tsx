@@ -8,9 +8,9 @@ import { TextField } from '../components/common/TextField'
 const backdrop = require('../../../../assets/images/backdrop.jpg')
 
 const RegisterPage = (props: any) => {
-  // console.log('Environment : ', process.env.REACT_APP_BASE_URL)
-  const googleLogin = () => {
-    window.open(`/auth/google`, '_self')
+  const handleSubmit = (event:any) => {
+    event.preventDefault()
+    console.log("submitted")
   }
 
   return (
@@ -21,7 +21,8 @@ const RegisterPage = (props: any) => {
         className={`item-center flex h-screen justify-center overflow-hidden
         py-5 transition-all duration-500 ease-in-out`}>
         <div>
-          <Card color="relative text-center top-[5%] bg-white">
+          <Card color="relative text-center top-[10%] bg-white">
+          <form className="space-y-6" onSubmit={handleSubmit} id="login-form">
             <h3 className=" text-2xl font-bold text-black/[0.7]"> Register</h3>
             <div className="mt-[3rem] ">
               <p>Please provide details to create a new account</p>
@@ -41,6 +42,7 @@ const RegisterPage = (props: any) => {
               </div>
               <Button text="Register" type="expanded" />
             </div>
+            </form>
           </Card>
         </div>
       </div>
