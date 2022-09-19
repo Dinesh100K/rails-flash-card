@@ -37,15 +37,13 @@ const Navbar = () => {
   }
 
   const handleLogout = () => {
-    axios
-      .get(`/auth/logout`, { withCredentials: true })
-      .then((res: AxiosResponse) => {
-        if (res.data) {
-          if (res.data === 'success') {
-            window.location.href = '/'
-          }
+    axios.get(`/auth/logout`, { withCredentials: true }).then((res: AxiosResponse) => {
+      if (res.data) {
+        if (res.data === 'success') {
+          window.location.href = '/'
         }
-      })
+      }
+    })
   }
 
   const handleLogin = () => navigate('/login')
