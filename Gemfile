@@ -81,3 +81,5 @@ gem 'rename', '~> 1.0'
 gem 'rubocop-rails', require: false
 gem 'tailwindcss-rails', '~> 2.0'
 
+
+gem "dotenv-rails", "~> 2.8"
