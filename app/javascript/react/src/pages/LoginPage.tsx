@@ -28,7 +28,7 @@ const LoginPage = (props: any) => {
       },
       body: JSON.stringify(data)
     }
-    return fetch(`social_auth/callback`, requestOptions)
+    return fetch(`users/omniauth_callbacks`, requestOptions)
     .then(response => response.json())
     .then(response => {
       console.log(response,  "I AM  RESPONSE FROM THE BACKEND");
