@@ -3,39 +3,12 @@ import { NavLink } from 'react-router-dom'
 import Button from '../components/common/Button'
 import { Card } from '../components/common/Card'
 import { TextField } from '../components/common/TextField'
+import axios from 'axios'
 const backdrop = require('../../../../assets/images/backdrop.jpg')
 
 const LoginPage = (props: any) => {
-  const googleLogin = (response: any) => {
+  const googleLogin = () => {
     window.open(`/users/auth/google_oauth2`, '_self')
-  //   console.log(response, "I AM RESPONSE FROM GOOGLE")
-  //   let token = response;
-  //   let data = {
-  //     provider: "google_oauth2",
-  //     uid: token.Ca,
-  //     id_token: response.wc.id_token,
-  //     info: {
-  //       email: token.nt.Wt
-  //     }
-  //   }
-  //   console.log(data, "MY USER OBJECT I WANT TO SEND TO THE BACKEND")
-  //   const requestOptions = {
-  //     method: 'POST',
-  //     headers: {
-  //       'Authorization': `Bearer ${response.wc.access_token}`,
-  //       'Content-Type': 'application/json',
-  //       'access_token': `${response.wc.access_token}`
-  //     },
-  //     body: JSON.stringify(data)
-  //   }
-  //   return fetch(`users/omniauth_callbacks`, requestOptions)
-  //   .then(response => response.json())
-  //   .then(response => {
-  //     console.log(response,  "I AM  RESPONSE FROM THE BACKEND");
-  //     // do something
-  // })
-  //   .catch(err=>console.log(err))
-
   }
   const handleSubmit = (event: any) => {
     event.preventDefault()
